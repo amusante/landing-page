@@ -40,7 +40,9 @@ npm install express
 ```
 node server.js [port number -- optional]
 ```
-* Note that additional ports can be defined, simply enter the port number, no flag necessary.
+* Note that additional ports can be defined, simply enter the port number, no flag necessary. App will default to port 3000.
+
+* Navigate to localhost::3000 (replace port number if defined explicitly)
 
 ## Help
 
