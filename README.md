@@ -35,7 +35,7 @@ express --version
 * Clone repo to directory
 * At the root of your directory open terminal and run
 ```
-npm server.js [port number -- optional]
+node server.js [port number -- optional]
 ```
 * Note that additional ports can be defined, simply enter the port number, no flag necessary.
 
