@@ -26,7 +26,10 @@ node --version
 ```
 express --version
 ```
-* if no version is defined, learn how to install node here [install node.js](https://nodejs.dev/learn/how-to-install-nodejs)
+* if no version is defined, install express:
+```
+npm install express
+```
 
 * Clone repo or download zip and extract to chosen directory
 
