@@ -15,7 +15,7 @@ app.use('/', function(req,res){
 const server = http.createServer(app);
 var port = 3000;
 //if port argument is defined, override default port
-if(args !== undefined){
+if(args !== undefined && args[2] !==undefined){
     port = args[2];   
 }
 
