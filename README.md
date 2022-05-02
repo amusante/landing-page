@@ -42,7 +42,7 @@ node server.js [port number -- optional]
 ```
 * Note that additional ports can be defined, simply enter the port number, no flag necessary. App will default to port 3000 if no argument is provided.
 
-* Navigate to localhost::3000 in your browser to view page. (replace port number if defined explicitly)
+* Navigate to localhost:3000 in your browser to view page. (replace port number if defined explicitly)
 
 ## Help
 
