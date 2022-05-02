@@ -46,7 +46,7 @@ node server.js [port number -- optional]
 ## Authors
 
 Alyssa Musante
-[@amusante](https://twitter.com/CS_NerdGirl)
+[@amusante](https://github.com/amusante)
 
 ## Version History
 
