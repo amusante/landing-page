@@ -1,0 +1,11 @@
+{
+    "name": "landing-page",
+    "version": "1.0.0",
+    "description": "University of Illinois Urbana-Champaign Landing Page created for Pixo's coding assesment",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.16.1"
+    }
+}
