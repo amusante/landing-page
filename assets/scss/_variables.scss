@@ -1,0 +1,20 @@
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Source Sans Pro', sans-serif;
+$illiniOrange: #FF552E;
+$illiniBlue: #13294B;
+$altgeld: #DD3403;
+$industBlue: #1D58A7;
+$white: #fff;
+$cloud: #f2f2f2;
+$grey:  #b3b3b3;
+$darkGrey:#6d6d6d;
+
+$primary:$illiniBlue;
+$secondary:$illiniOrange;
+$light:$cloud;
+$dark:$illiniBlue;
+
+$sticky: sticky;
+$sticky: fixed !default;
+
+@import "bootstrap5/bootstrap";
