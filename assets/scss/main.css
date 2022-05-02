@@ -12037,6 +12037,18 @@ fieldset:disabled .btn {
   font-size: clamp(16px, 3vw, 48px);
 }
 
+@media (max-width: 767.98px) {
+  h2.secondaryTitle, .secondaryTitle.h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h2.secondaryTitle, .secondaryTitle.h2 {
+    text-align: center;
+  }
+}
+
 .tertiaryTitle {
   font-size: 32px;
   font-size: min(max(16px, 3vw), 32px);
@@ -12380,7 +12392,6 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .hero .hero-graphics img.wave {
     height: 22%;
     width: auto;
-    margin-left: -30%;
   }
 }
 
@@ -12413,8 +12424,8 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 
 @media (max-width: 575.98px) {
   .hero .container-lg.ps-5 {
-    padding-left: 0px !important;
-    padding-right: 0px;
+    padding-left: .15rem !important;
+    padding-right: .15rem;
   }
 }
 
@@ -12584,12 +12595,12 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   }
 }
 
-@media (max-width: 575.98px) {
-  .card-row-sm {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-  }
+.wave-inside::after {
+  content: '';
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/Intersect.svg);
+  background-position: bottom;
 }
 /*# sourceMappingURL=main.css.map */
