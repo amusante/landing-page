@@ -97,6 +97,13 @@ h2{
          &:after{
             color: $illiniOrange;
         }
+        &.dark{
+            background-color: $illiniBlue;
+
+            &:hover{
+                background-color: $altgeld;
+            }
+        }
      }
 }
 
@@ -535,64 +542,6 @@ header{
     background-repeat: no-repeat;
     padding-top:100px;
 }
-.q-box{
-    padding: 7% 5% 5%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 300px;
-    
-    
-    .secondaryLabel{
-        font-size: 36px;
-        @include media-breakpoint-down(xl){
-            font-size: 30px;
-        }
-        @include media-breakpoint-down(md){
-            font-size: 24px;
-        }
-        @include media-breakpoint-down(sm){
-            font-size: 28px;
-        }
-    }
-
-    @include media-breakpoint-down(sm){
-        padding-top: 10%;
-        padding-right: 15%;
-        padding-left: 15%;
-    }
-}
-.q-box-left{
-    background-image: url(../images/speechLeft.svg);
-    margin-top: 30px;
-    background-position: top left;
-    @include media-breakpoint-down(md){
-        background-image: url(../images/SpeechLeftMd.svg);
-    }
-    @include media-breakpoint-down(sm){
-        background-position: center center;
-    }
-
-}
-.q-box-right{
-    background-image: url(../images/speechRight.svg);
-    text-align: right;
-    padding-top: 75px;
-    background-position: top right;
-    @include media-breakpoint-down(xl){
-        padding-top: 50px;
-    }
-    @include media-breakpoint-down(md){
-        background-image: url(../images/SpeechRightMd.svg);
-    }
-    @include media-breakpoint-down(sm){
-        background-position: center center;
-        padding-right: 22%
-    }
-
-
-}
-
-
 .speech{
     padding: 30px;
     text-align: center;
@@ -677,35 +626,63 @@ header{
 
 .call-to-action{
     padding: 10% 0;
-
-    h2{
-        font-size: 56px;
-        @include media-breakpoint-down(lg){
-            font-size: 40px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .waves-footer{
+         width:100%;
+         height:100%;
+         position: absolute;
+         z-index: 9;
+         top: -100px;
+         opacity: .5;
+         .wave{
+             width: 100%;
+             @include media-breakpoint-down(md){
+                width: 130%;
+            }
+         }
+         @include media-breakpoint-down(xlg){
+             top:-50px;
+         }
+         @include media-breakpoint-down(md){
+            top:0px;
         }
-        @include media-breakpoint-down(md){
-            font-size: 24px;
-        }
+         
     }
-    
-   .btn{
-        font-size: 24px;
-        
-        @include media-breakpoint-down(lg){
-            font-size: 20px;
-        }
-   }
-   .secondaryBtns{
-        @include media-breakpoint-down(lg){
-            padding: 0px 5%;
-            .btn{
-                font-size: 16px;
+     .container{
+         position: relative;
+         z-index: 15;
+
+         h2{
+            font-size: 56px;
+            @include media-breakpoint-down(lg){
+                font-size: 40px;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 24px;
             }
         }
-        @include media-breakpoint-down(md){
-            padding: 0;
-        }
-   }
+        
+       .btn{
+            font-size: 24px;
+            
+            @include media-breakpoint-down(lg){
+                font-size: 20px;
+            }
+       }
+       .secondaryBtns{
+            @include media-breakpoint-down(lg){
+                padding: 0px 5%;
+                .btn{
+                    font-size: 16px;
+                }
+            }
+            @include media-breakpoint-down(md){
+                padding: 0;
+            }
+       }
+     }  
 }
 
 .wave-inside{
@@ -723,4 +700,10 @@ header{
         background-size: auto;
     }
 
+}
+footer{
+    display: inline-block;
+    position: relative;
+    z-index: 20;
+    width: 100%;
 }
