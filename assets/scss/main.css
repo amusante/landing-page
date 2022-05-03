@@ -12039,6 +12039,14 @@ fieldset:disabled .btn {
   font-size: clamp(16px, 3vw, 48px);
 }
 
+.secondaryBlue {
+  color: #1D58A7;
+}
+
+.secondaryOrng {
+  color: #DD3403;
+}
+
 @media (max-width: 767.98px) {
   h2.secondaryTitle, .secondaryTitle.h2 {
     font-size: 34px;
@@ -12053,8 +12061,8 @@ fieldset:disabled .btn {
 
 .tertiaryTitle {
   font-size: 32px;
-  font-size: min(max(16px, 3vw), 32px);
-  font-size: clamp(16px, 3vw, 32px);
+  font-size: min(max(20px, 3vw), 32px);
+  font-size: clamp(20px, 3vw, 32px);
 }
 
 .textLink {
@@ -12546,7 +12554,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   background-image: url(../images/circle-portrait.jpg);
   top: 300px;
   left: 58%;
-  z-index: 50;
+  z-index: 25;
   border: 9px solid #f2f2f2;
 }
 
@@ -12589,18 +12597,218 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 }
 
 .circle.portrait-2 {
-  width: 160px;
-  height: 160px;
+  width: 320px;
+  height: 320px;
   display: block;
   background-image: url(../images/circle-portrait-2.jpg);
   border: 8px solid;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767.98px) {
   .circle.portrait-2 {
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
   }
+}
+
+@media (max-width: 575.98px) {
+  .circle.portrait-2 {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.pledgeQuote > *:not(svg) {
+  padding: 2% 0;
+}
+
+.pledgeQuote svg {
+  margin-top: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .pledgeQuote svg {
+    margin-top: 20px;
+  }
+}
+
+.pledgeQuote .pledgeName {
+  padding: 10px 0px 5px;
+}
+
+.pledgeQuote .pledgeRole {
+  padding: 0 0 20px;
+}
+
+@media (max-width: 575.98px) {
+  .pledgeQuote {
+    text-align: center;
+  }
+  .pledgeQuote svg {
+    margin-top: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.bubble-questions {
+  background-image: url(../images/question-bubbles.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.q-box {
+  padding: 7% 5% 5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+}
+
+.q-box .secondaryLabel {
+  font-size: 36px;
+}
+
+@media (max-width: 1199.98px) {
+  .q-box .secondaryLabel {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .q-box .secondaryLabel {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .q-box .secondaryLabel {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .q-box {
+    padding-top: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
+
+.q-box-left {
+  background-image: url(../images/speechLeft.svg);
+  margin-top: 30px;
+  background-position: top left;
+}
+
+@media (max-width: 767.98px) {
+  .q-box-left {
+    background-image: url(../images/SpeechLeftMd.svg);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .q-box-left {
+    background-position: center center;
+  }
+}
+
+.q-box-right {
+  background-image: url(../images/speechRight.svg);
+  text-align: right;
+  padding-top: 75px;
+  background-position: top right;
+}
+
+@media (max-width: 1199.98px) {
+  .q-box-right {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .q-box-right {
+    background-image: url(../images/SpeechRightMd.svg);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .q-box-right {
+    background-position: center center;
+    padding-right: 22%;
+  }
+}
+
+.speech {
+  padding: 30px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 50px;
+  position: relative;
+}
+
+.speech.speech-outline {
+  padding: 3px;
+  width: 75%;
+}
+
+.speech.speech-outline::before {
+  content: ' ';
+  position: absolute;
+}
+
+.speech.speech-outline .speech-inside {
+  width: 100%;
+  border-radius: 7px 7px 7px 7px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), color-stop(105.88%, #FFFFFF));
+  background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 105.88%);
+}
+
+.speech.speech-outline .speech-inside::before {
+  content: ' ';
+  position: absolute;
+}
+
+.speech.speech-right {
+  border-radius: 10px 0 10px 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#13294B), color-stop(97.3%, #FF552E));
+  background: linear-gradient(180deg, #13294B 0%, #FF552E 97.3%);
+}
+
+.speech.speech-right::before {
+  border-top: 35px solid transparent;
+  border-right: 30px solid #13294B;
+  right: 0px;
+  top: -30px;
+}
+
+.speech.speech-right .speech-inside::before {
+  position: absolute;
+  border-top: 25px solid transparent;
+  border-right: 20px solid white;
+  right: 0px;
+  top: -30px;
+}
+
+.speech.speech-left {
+  border-radius: 10px 10px 10px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF552E), color-stop(97.3%, #13294B));
+  background: linear-gradient(180deg, #FF552E 0%, #13294B 97.3%);
+}
+
+.speech.speech-left ::before {
+  border-width: 0 0 15px 15px;
+  border-color: transparent transparent #FF552E transparent;
+  left: 0px;
+  bottom: 10px;
+}
+
+.speech.speech-left .speech-inside::before {
+  border-width: 0 0 12px 12px;
+  border-color: transparent transparent #ffffff transparent;
+  right: -20px;
+  top: 10px;
 }
 
 .wave-inside {
