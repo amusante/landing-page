@@ -12019,6 +12019,8 @@ fieldset:disabled .btn {
 
 .unitTitleLarge {
   font-size: 24px;
+  font-size: min(max(20px, 2vw), 24px);
+  font-size: clamp(20px, 2vw, 24px);
 }
 
 .unitTitleSmall {
@@ -12070,11 +12072,8 @@ fieldset:disabled .btn {
 }
 
 .btn:after {
-  content: "\203A";
-  position: relative;
-  width: 8px;
-  height: 16px;
-  left: -16px;
+  font: var(--fa-font-solid);
+  content: "\f054";
 }
 
 .btn.btn-primary {
@@ -12090,7 +12089,7 @@ fieldset:disabled .btn {
 
 .btn.btn-secondary {
   background: none;
-  border: #FF552E;
+  border: 3px solid #FF552E;
   color: #13294B;
 }
 
@@ -12364,43 +12363,34 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   top: 0px;
   left: 0px;
   z-index: 10;
+  width: 100%;
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 1399.98px) {
   .hero .hero-graphics img.wave {
-    width: auto;
     height: 57%;
-    margin-top: -150px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero .hero-graphics img.wave {
-    height: 45%;
-    margin-left: -45px;
+    top: -150px;
   }
 }
 
 @media (max-width: 1199.98px) {
   .hero .hero-graphics img.wave {
     height: 50%;
-    width: 105%;
   }
 }
 
 @media (max-width: 767.98px) {
   .hero .hero-graphics img.wave {
-    height: 22%;
-    width: auto;
+    height: 50%;
+    top: -13%;
   }
 }
 
 @media (max-width: 575.98px) {
   .hero .hero-graphics img.wave {
-    height: 14%;
-    margin-left: -50%;
-    top: -3%;
+    height: 11%;
     opacity: 50%;
+    top: 0px;
   }
 }
 
@@ -12463,15 +12453,21 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .circle-lt-blue {
     width: 60px;
     height: 60px;
-    right: 41px;
+    right: 6%;
   }
+}
+
+.circle {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  background-repeat: no-repeat;
 }
 
 .circle-dk-blue {
   width: 40px;
   height: 40px;
   position: absolute;
-  display: block;
   background-color: #13294B;
   top: 11%;
   right: 3.5%;
@@ -12498,6 +12494,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 @media (max-width: 575.98px) {
   .circle-dk-blue {
     top: 5%;
+    right: 5%;
   }
 }
 
@@ -12505,7 +12502,6 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   width: 500px;
   height: 500px;
   position: absolute;
-  display: block;
   background-color: #FF552E;
   top: 0px;
   left: 50%;
@@ -12538,8 +12534,8 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .circle-orange {
     width: 224px;
     height: 224px;
-    left: 5%;
-    top: -2%;
+    left: 6%;
+    top: -1%;
   }
 }
 
@@ -12547,10 +12543,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   width: 500px;
   height: 500px;
   position: absolute;
-  display: block;
   background-image: url(../images/circle-portrait.jpg);
-  background-size: contain;
-  background-position: center;
   top: 300px;
   left: 58%;
   z-index: 50;
@@ -12590,17 +12583,48 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .circle-portrait {
     width: 224px;
     height: 224px;
-    top: 3%;
-    left: 15%;
+    top: 3.5%;
+    left: 22%;
   }
 }
 
-.wave-inside::after {
-  content: '';
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/Intersect.svg);
-  background-position: bottom;
+.circle.portrait-2 {
+  width: 160px;
+  height: 160px;
+  display: block;
+  background-image: url(../images/circle-portrait-2.jpg);
+  border: 8px solid;
+}
+
+@media (min-width: 768px) {
+  .circle.portrait-2 {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+.wave-inside {
+  background-image: url(../images/wave-inside.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+@media (min-width: 1200px) {
+  .wave-inside {
+    background-position: left 200%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .wave-inside {
+    background-position: left 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wave-inside {
+    background-size: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -73,14 +73,14 @@
           </div>
         </div>
         <div class="w-auto py-5 bg-dark wave-inside">
-          <div class="container px-5 px-lg-0">
+          <div class="container-lg px-5">
             <h2 class="secondaryTitle text-light py-5">Why Should I Sign?</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col ">
                 <div class="card border-dark">
                   <div class="row g-0 flex-sm-row-reverse">
                     <div class="col-12 col-sm-6 col-md-12">
-                      <img src="/assets/images/card-1.jpg" class="card-img-top" alt="...">
+                      <img src="/assets/images/card-1.jpg" class="card-img-top h-100" alt="...">
                     </div>
                     <div class="col-12 col-sm-6 col-md-12">
                     <div class="card-body">
@@ -95,7 +95,7 @@
                 <div class="card border-dark">
                   <div class="row g-0 flex-sm-row-reverse">
                     <div class="col-12 col-sm-6 col-md-12">
-                      <img src="/assets/images/card-2.jpg" class="card-img-top" alt="...">
+                      <img src="/assets/images/card-2.jpg" class="card-img-top h-100" alt="...">
                     </div>
                     <div class="col-12 col-sm-6 col-md-12">
                     <div class="card-body">
@@ -110,7 +110,7 @@
                 <div class="card border-dark">
                   <div class="row g-0 flex-sm-row-reverse">
                     <div class="col-12 col-sm-6 col-md-12">
-                      <img src="/assets/images/card-3.jpg" class="card-img-top" alt="...">
+                      <img src="/assets/images/card-3.jpg" class="card-img-top h-100" alt="...">
                     </div>
                     <div class="col-12 col-sm-6 col-md-12">
                       <div class="card-body">
@@ -126,16 +126,22 @@
         </div>
         <div class="w-auto py-5 bg-light">
           <div class="container">
-            <div class="row">  
-              <div class="col-12 col-sm-5 col-md-6">
+            <div class="row">
+              <div class="col-lg-4 col-12 col-md-6 d-flex justify-content-center justify-content-lg-end">
                 <div class="circle rounded-circle portrait-2"></div>
-            </div>
-                <span class="fa-solid fa-quote-left"></span>
+              </div>
+              <div class="col-lg-8 col col-sm-12 col-md-6 d-flex flex-column g-5 g-md-3 justify-content-center justify-content-lg-start">
+                <svg class="quote-icon" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 10H19.5C19.5 6.838 21.086 5.186 24 5V0C19 0 15.922 2.17 14.682 6.262C14.186 7.998 14 10.106 14 13.64V20H24V10ZM10 10H5.5C5.5 6.838 7.086 5.186 10 5V0C5 0 1.922 2.17 0.682 6.262C0.186 7.998 0 10.106 0 13.64V20H10V10Z" fill="#FF552E"/>
+                </svg>
                 <p class="tertiaryTitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
                 <span class="primaryLabel text-uppercase">Pledge-signer's Name</span>
                 <span class="text-dark text-decoration-underline">Role, Company</span>
-                <button aria-role="tab" class="btn btn-secondary">Discover who else has signed the pledge </button>
+                <div>
+                  <button aria-role="tab" class="btn unitTitleLarge btn-secondary">Discover who else has signed the pledge </button>
+                </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="w-auto py-5 bg-light">

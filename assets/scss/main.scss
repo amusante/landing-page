@@ -18,7 +18,7 @@
     font-weight:400;
 }
 .unitTitleLarge{
-    font-size:24px;
+    @include clamp('font-size', 20px, 2vw, 24px);
 }
 .unitTitleSmall{
     font-size: 16px;
@@ -54,11 +54,9 @@ h2{
     border-radius:8px;
     padding: 10px 24px;
     &:after{
-        content:"\203A";
-        position: relative;
-        width:8px;
-        height:16px;
-        left: -16px;
+        font: var(--fa-font-solid);
+        content:"\f054";
+
     }
     &.btn-primary{
         background: $illiniOrange; 
@@ -71,7 +69,7 @@ h2{
      }
      &.btn-secondary{
          background:none;
-         border:$illiniOrange;
+         border: 3px solid $illiniOrange;
          color:$illiniBlue;
          &:hover{
              background:$altgeld;
@@ -312,29 +310,22 @@ header{
             top: 0px;
             left: 0px;
             z-index: 10;
-            @include media-breakpoint-up(xxl){
-                width: auto;
+            width: 100%;
+            @include media-breakpoint-down(xxl){
                 height: 57%;
-                margin-top: -150px;;
+                top: -150px;
             }
-            @include media-breakpoint-up(xl){
-                height:45%;
-                margin-left:-45px;
-            }
-
             @include media-breakpoint-down(xl){
                 height: 50%;
-                width: 105%;
             }
             @include media-breakpoint-down(md){
-                height: 22%;
-                width: auto;
+                height: 50%;
+                top: -13%;
             }
             @include media-breakpoint-down(sm){
-                height: 14%;
-                margin-left: -50%;
-                top: -3%;
+                height: 11%;
                 opacity: 50%;
+                top: 0px;
             }
         }
     }
@@ -382,14 +373,19 @@ header{
     @include media-breakpoint-down(sm){
         width: 60px;
         height: 60px;
-        right: 41px;
+        right: 6%;
     }
+}
+.circle{
+    background-size:cover;
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
 }
 .circle-dk-blue{
     width:40px;
     height: 40px;
     position:absolute;
-    display: block;
     background-color: $illiniBlue;
     top: 11%;
     right: 3.5%;
@@ -404,13 +400,13 @@ header{
     }
     @include media-breakpoint-down(sm){
         top: 5%;
+        right: 5%;
     }
 }
 .circle-orange{
     width:500px;
     height: 500px;
     position:absolute;
-    display: block;
     background-color: $illiniOrange;
     top: 0px;
     left: 50%;
@@ -431,18 +427,15 @@ header{
     @include media-breakpoint-down(sm){
         width: 224px;
         height: 224px;
-        left: 5%;
-        top: -2%;
+        left: 6%;
+        top: -1%;
     }
 }
 .circle-portrait{
     width: 500px;
     height: 500px;
     position: absolute;
-    display: block;
     background-image: url(../images/circle-portrait.jpg);
-    background-size: contain;
-    background-position: center;
     top: 300px;
     left: 58%;
     z-index: 50;
@@ -468,15 +461,39 @@ header{
     @include media-breakpoint-down(sm){
         width: 224px;
         height: 224px;
-        top:3%;
-        left: 15%;
+        top: 3.5%;
+        left: 22%;
     }
 }
-.wave-inside::after{
-    content:'';
-    position:relative;
-    width:100%;
-    height:100%;
-    background-image: url(../images/Intersect.svg);
-    background-position:bottom;
+.circle.portrait-2{
+    width: 160px;
+    height: 160px;
+    display: block;
+    background-image: url(../images/circle-portrait-2.jpg);
+    border: 8px solid;
+    @include media-breakpoint-up(md){
+        width:320px;
+        height: 320px;
+
+    }
+    // @include media-breakpoint-up(sm){
+    //     width: 280px;
+    //     height: 280px;
+    // }
+}
+.wave-inside{
+    background-image: url(../images/wave-inside.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    @include media-breakpoint-up(xl){
+        background-position: left 200%;
+    }
+    @include media-breakpoint-down(xl){
+        background-position: left 100%;
+    }
+    @include media-breakpoint-up(xl){
+        background-size: auto;
+    }
+
 }
