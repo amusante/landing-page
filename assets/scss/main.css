@@ -12750,7 +12750,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 
 .speech.speech-outline {
   padding: 3px;
-  width: 75%;
+  width: 85%;
 }
 
 .speech.speech-outline::before {
@@ -12763,6 +12763,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   border-radius: 7px 7px 7px 7px;
   background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), color-stop(105.88%, #FFFFFF));
   background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 105.88%);
+  padding: 30px;
 }
 
 .speech.speech-outline .speech-inside::before {
@@ -12770,45 +12771,78 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   position: absolute;
 }
 
+.speech.speech-outline .speech-inside .secondaryLabel {
+  font-size: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .speech.speech-outline .speech-inside .secondaryLabel {
+    font-size: 32px;
+  }
+}
+
 .speech.speech-right {
   border-radius: 10px 0 10px 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#13294B), color-stop(97.3%, #FF552E));
   background: linear-gradient(180deg, #13294B 0%, #FF552E 97.3%);
+  margin-left: auto;
+  text-align: right;
 }
 
 .speech.speech-right::before {
   border-top: 35px solid transparent;
   border-right: 30px solid #13294B;
   right: 0px;
-  top: -30px;
+  top: -32px;
 }
 
 .speech.speech-right .speech-inside::before {
   position: absolute;
-  border-top: 25px solid transparent;
-  border-right: 20px solid white;
-  right: 0px;
-  top: -30px;
+  border-top: 34px solid transparent;
+  border-right: 28px solid #f2f2f2;
+  right: 3px;
+  top: -24px;
 }
 
 .speech.speech-left {
   border-radius: 10px 10px 10px 0px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF552E), color-stop(97.3%, #13294B));
   background: linear-gradient(180deg, #FF552E 0%, #13294B 97.3%);
+  text-align: left;
 }
 
-.speech.speech-left ::before {
-  border-width: 0 0 15px 15px;
-  border-color: transparent transparent #FF552E transparent;
+.speech.speech-left::before {
+  border-right: 35px solid transparent;
+  border-top: 30px solid #13294B;
   left: 0px;
-  bottom: 10px;
+  bottom: -27px;
 }
 
 .speech.speech-left .speech-inside::before {
-  border-width: 0 0 12px 12px;
-  border-color: transparent transparent #ffffff transparent;
-  right: -20px;
-  top: 10px;
+  border-right: 34px solid transparent;
+  border-top: 28px solid white;
+  left: 3px;
+  bottom: -19px;
+}
+
+@media (max-width: 575.98px) {
+  .speech.speech-left {
+    margin: 20px auto 0px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .speech {
+    margin: 0 auto;
+  }
+}
+
+.call-to-action {
+  padding: 10% 0;
+}
+
+.call-to-action .btn {
+  font-size: 24px;
 }
 
 .wave-inside {

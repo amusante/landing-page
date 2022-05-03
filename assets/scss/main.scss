@@ -584,7 +584,7 @@ header{
     position: relative;
     &.speech-outline {
         padding: 3px;
-        width: 75%;
+        width: 85%;
         &::before{
             content: ' ';
             position: absolute;
@@ -593,51 +593,77 @@ header{
             width: 100%;
             border-radius: 7px 7px 7px 7px;
             background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 105.88%);
+            padding: 30px;
 
             &::before{
                 content: ' ';
                 position: absolute;
             }
-        }
-        
+
+            .secondaryLabel{
+                font-size: 40px;
+                @include media-breakpoint-down(md) {
+                    font-size: 32px;
+                }
+            }
+        } 
     }
     &.speech-right {
         border-radius: 10px 0 10px 10px;
-        background: linear-gradient(180deg, $illiniBlue 0%, $illiniOrange 97.3%);       
+        background: linear-gradient(180deg, $illiniBlue 0%, $illiniOrange 97.3%);  
+        margin-left: auto;
+        text-align: right;
+
         &::before{
             border-top: 35px solid transparent;
-	        border-right: 30px solid $illiniBlue;
+            border-right: 30px solid #13294B;
             right: 0px;
-            top: -30px;
+            top: -32px;
         }
         .speech-inside{
             &::before{
                 position: absolute;
-                border-top: 25px solid transparent;
-                border-right: 20px solid white;
-                right: 0px;
-                top: -30px;
+                border-top: 34px solid transparent;
+                border-right: 28px solid #f2f2f2;
+                right: 3px;
+                top: -24px;
             }
         }
     }
     &.speech-left{
         border-radius: 10px 10px 10px 0px;
         background: linear-gradient(180deg, $illiniOrange 0%, $illiniBlue 97.3%);
-        ::before{
-            border-width: 0 0 15px 15px;
-            border-color: transparent transparent $illiniOrange transparent;
+        text-align: left;
+        &::before{
+            border-right: 35px solid transparent;
+            border-top: 30px solid $illiniBlue;
             left: 0px;
-            bottom: 10px;
+            bottom: -27px;
         }
         .speech-inside{
             &::before{
-                border-width: 0 0 12px 12px;
-                border-color: transparent transparent #ffffff transparent;
-                right: -20px;
-                top: 10px;
+                border-right: 34px solid transparent;
+                border-top: 28px solid white;
+                left: 3px;
+                bottom: -19px;
             }
+
+        }
+        @include media-breakpoint-down(sm){
+            margin: 20px auto 0px;
         }
     }
+    @include media-breakpoint-down(sm){
+        margin: 0 auto;
+    }
+}
+
+.call-to-action{
+    padding: 10% 0;
+    
+   .btn{
+        font-size: 24px;
+   }
 }
 
 .wave-inside{
