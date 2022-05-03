@@ -14,6 +14,15 @@
     font-weight:700;
 }
 
+.tertiaryLink{
+    &.lightweight{
+        font-weight: 400;
+    }
+    &:hover{
+        color: $illiniOrange;
+    }
+}
+
 .tertiaryTitle{
     font-weight:400;
 }
@@ -61,7 +70,7 @@ h2{
     &:after{
         font: var(--fa-font-solid);
         content:"\f054";
-
+        padding-left:7px;
     }
     &.btn-primary{
         background: $illiniOrange; 
@@ -71,6 +80,7 @@ h2{
          background: $altgeld;
          color: $white;
         }
+
      }
      &.btn-secondary{
          background:none;
@@ -78,8 +88,15 @@ h2{
          color:$illiniBlue;
          &:hover{
              background:$altgeld;
-             border:none;
+             border: 3px solid $altgeld;
+             color: $white;
+             &:after{
+                 color: $white;
+             }
          }
+         &:after{
+            color: $illiniOrange;
+        }
      }
 }
 
@@ -660,9 +677,34 @@ header{
 
 .call-to-action{
     padding: 10% 0;
+
+    h2{
+        font-size: 56px;
+        @include media-breakpoint-down(lg){
+            font-size: 40px;
+        }
+        @include media-breakpoint-down(md){
+            font-size: 24px;
+        }
+    }
     
    .btn{
         font-size: 24px;
+        
+        @include media-breakpoint-down(lg){
+            font-size: 20px;
+        }
+   }
+   .secondaryBtns{
+        @include media-breakpoint-down(lg){
+            padding: 0px 5%;
+            .btn{
+                font-size: 16px;
+            }
+        }
+        @include media-breakpoint-down(md){
+            padding: 0;
+        }
    }
 }
 

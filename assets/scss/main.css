@@ -12013,6 +12013,14 @@ fieldset:disabled .btn {
   font-weight: 700;
 }
 
+.tertiaryLink.lightweight {
+  font-weight: 400;
+}
+
+.tertiaryLink:hover {
+  color: #FF552E;
+}
+
 .tertiaryTitle {
   font-weight: 400;
 }
@@ -12082,6 +12090,7 @@ fieldset:disabled .btn {
 .btn:after {
   font: var(--fa-font-solid);
   content: "\f054";
+  padding-left: 7px;
 }
 
 .btn.btn-primary {
@@ -12103,7 +12112,16 @@ fieldset:disabled .btn {
 
 .btn.btn-secondary:hover {
   background: #DD3403;
-  border: none;
+  border: 3px solid #DD3403;
+  color: #fff;
+}
+
+.btn.btn-secondary:hover:after {
+  color: #fff;
+}
+
+.btn.btn-secondary:after {
+  color: #FF552E;
 }
 
 .icon {
@@ -12841,8 +12859,45 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   padding: 10% 0;
 }
 
+.call-to-action h2, .call-to-action .h2 {
+  font-size: 56px;
+}
+
+@media (max-width: 991.98px) {
+  .call-to-action h2, .call-to-action .h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .call-to-action h2, .call-to-action .h2 {
+    font-size: 24px;
+  }
+}
+
 .call-to-action .btn {
   font-size: 24px;
+}
+
+@media (max-width: 991.98px) {
+  .call-to-action .btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .call-to-action .secondaryBtns {
+    padding: 0px 5%;
+  }
+  .call-to-action .secondaryBtns .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .call-to-action .secondaryBtns {
+    padding: 0;
+  }
 }
 
 .wave-inside {
