@@ -12198,7 +12198,7 @@ main {
 header {
   border-top: 8.5px solid #FF552E;
   position: relative;
-  z-index: 30;
+  z-index: 29;
   width: 100%;
 }
 
@@ -12430,7 +12430,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 
 .hero .hero-content {
   position: relative;
-  z-index: 30;
+  z-index: 29;
 }
 
 @media (max-width: 575.98px) {

@@ -360,7 +360,7 @@ header{
     }
     .hero-content{
         position: relative;
-        z-index: 30;
+        z-index: 29;
         &.w-50{
             @include media-breakpoint-down(sm){
                 width: 100% !important;
