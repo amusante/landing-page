@@ -12390,6 +12390,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 
 .hero {
   padding: 13% 0;
+  position: relative;
 }
 
 .hero .hero-graphics img.wave {
@@ -12398,33 +12399,20 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   left: 0px;
   z-index: 10;
   width: 100%;
-}
-
-@media (max-width: 1399.98px) {
-  .hero .hero-graphics img.wave {
-    height: 57%;
-    top: -150px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .hero .hero-graphics img.wave {
-    height: 50%;
-  }
+  top: -20%;
 }
 
 @media (max-width: 767.98px) {
   .hero .hero-graphics img.wave {
-    height: 50%;
-    top: -13%;
+    height: 150%;
   }
 }
 
 @media (max-width: 575.98px) {
   .hero .hero-graphics img.wave {
-    height: 11%;
-    opacity: 50%;
-    top: 0px;
+    height: 100%;
+    opacity: .5;
+    top: -200px;
   }
 }
 
@@ -12460,7 +12448,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   display: block;
   background-color: #1D58A7;
   top: 8%;
-  right: 5%;
+  right: 10%;
 }
 
 @media (max-width: 1199.98px) {
@@ -12479,7 +12467,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 
 @media (max-width: 767.98px) {
   .circle-lt-blue {
-    top: 105px;
+    top: 3%;
   }
 }
 
@@ -12503,8 +12491,8 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   height: 40px;
   position: absolute;
   background-color: #13294B;
-  top: 11%;
-  right: 3.5%;
+  top: 19%;
+  right: 9%;
 }
 
 @media (max-width: 1199.98px) {
@@ -12515,19 +12503,21 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
 
 @media (max-width: 991.98px) {
   .circle-dk-blue {
-    top: 15%;
+    top: auto;
+    bottom: 30%;
   }
 }
 
 @media (max-width: 767.98px) {
   .circle-dk-blue {
-    top: 12%;
+    bottom: 15%;
   }
 }
 
 @media (max-width: 575.98px) {
   .circle-dk-blue {
-    top: 5%;
+    top: 15%;
+    bottom: auto;
     right: 5%;
   }
 }
@@ -12537,7 +12527,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   height: 500px;
   position: absolute;
   background-color: #FF552E;
-  top: 0px;
+  top: -30%;
   left: 50%;
 }
 
@@ -12560,7 +12550,8 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .circle-orange {
     width: 248px;
     height: 248px;
-    top: 32px;
+    top: -23%;
+    left: 40%;
   }
 }
 
@@ -12568,8 +12559,8 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .circle-orange {
     width: 224px;
     height: 224px;
-    left: 6%;
-    top: -1%;
+    left: 10%;
+    top: -21%;
   }
 }
 
@@ -12578,7 +12569,7 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   height: 500px;
   position: absolute;
   background-image: url(../images/circle-portrait.jpg);
-  top: 300px;
+  top: 10%;
   left: 58%;
   z-index: 25;
   border: 9px solid #f2f2f2;
@@ -12609,7 +12600,8 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .circle-portrait {
     width: 348px;
     height: 348px;
-    top: 5%;
+    top: 11%;
+    left: 52%;
   }
 }
 
@@ -12617,8 +12609,8 @@ header nav.navbar .nav-item ul.dropdown-menu a.dropdown-item:hover {
   .circle-portrait {
     width: 224px;
     height: 224px;
-    top: 3.5%;
-    left: 22%;
+    top: 5%;
+    left: 25%;
   }
 }
 

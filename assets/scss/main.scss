@@ -333,6 +333,7 @@ header{
 }
 .hero{
     padding: 13% 0;
+    position: relative;
     .hero-graphics{
         img.wave {
             position: absolute;
@@ -340,21 +341,15 @@ header{
             left: 0px;
             z-index: 10;
             width: 100%;
-            @include media-breakpoint-down(xxl){
-                height: 57%;
-                top: -150px;
-            }
-            @include media-breakpoint-down(xl){
-                height: 50%;
-            }
+            top: -20%;
+
             @include media-breakpoint-down(md){
-                height: 50%;
-                top: -13%;
+                height: 150%;
             }
             @include media-breakpoint-down(sm){
-                height: 11%;
-                opacity: 50%;
-                top: 0px;
+                height: 100%;
+    opacity: .5;
+    top: -200px;
             }
         }
     }
@@ -387,7 +382,7 @@ header{
     display: block;
     background-color: $industBlue;
     top: 8%;
-    right: 5%;
+    right: 10%;
     @include media-breakpoint-down(xl){
         top: 8%;
         right: 3%;
@@ -397,7 +392,7 @@ header{
         right: 4%;
     }
     @include media-breakpoint-down(md){
-        top:105px;
+        top: 3%
     }
     @include media-breakpoint-down(sm){
         width: 60px;
@@ -416,19 +411,21 @@ header{
     height: 40px;
     position:absolute;
     background-color: $illiniBlue;
-    top: 11%;
-    right: 3.5%;
+    top: 19%;
+    right: 9%;
     @include media-breakpoint-down(xl){
         top: 13%;
     }
     @include media-breakpoint-down(lg){
-        top: 15%;
+        top: auto;
+        bottom: 30%
     }
     @include media-breakpoint-down(md){
-        top: 12%;
+        bottom: 15%;
     }
     @include media-breakpoint-down(sm){
-        top: 5%;
+        top: 15%;
+        bottom: auto;
         right: 5%;
     }
 }
@@ -437,7 +434,7 @@ header{
     height: 500px;
     position:absolute;
     background-color: $illiniOrange;
-    top: 0px;
+    top: -30%;
     left: 50%;
     @include media-breakpoint-down(xl){
         width:430px;
@@ -451,13 +448,14 @@ header{
     @include media-breakpoint-down(md){
         width: 248px;
         height: 248px;
-        top: 32px;
+        top: -23%;
+        left: 40%;
     }
     @include media-breakpoint-down(sm){
         width: 224px;
         height: 224px;
-        left: 6%;
-        top: -1%;
+        left: 10%;
+        top: -21%;
     }
 }
 .circle-portrait{
@@ -465,7 +463,7 @@ header{
     height: 500px;
     position: absolute;
     background-image: url(../images/circle-portrait.jpg);
-    top: 300px;
+    top: 10%;
     left: 58%;
     z-index: 25;
     border: 9px solid #f2f2f2;
@@ -485,13 +483,14 @@ header{
     @include media-breakpoint-down(md){
         width: 348px;
         height: 348px;
-        top: 5%;
+        top: 11%;
+        left: 52%;
     }
     @include media-breakpoint-down(sm){
         width: 224px;
         height: 224px;
-        top: 3.5%;
-        left: 22%;
+        top: 5%;
+        left: 25%;
     }
 }
 .circle.portrait-2{
