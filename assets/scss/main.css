@@ -12892,4 +12892,47 @@ footer {
   z-index: 20;
   width: 100%;
 }
+
+footer .brand {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .brand .social.ml-auto {
+  font-size: 26px;
+  width: 50%;
+  max-width: 300px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 575.98px) {
+  footer .brand .social.ml-auto {
+    width: 100%;
+    max-width: auto;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  footer .brand {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer .unitTitleLarge {
+  font-size: 24px;
+}
+
+@media (max-width: 575.98px) {
+  footer .unitTitleLarge {
+    font-size: 24px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
